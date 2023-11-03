@@ -66,6 +66,7 @@ a{
 }
 
 .title-sec{
+    width: 60%;
     text-align: center;
 }
 
@@ -73,7 +74,19 @@ a{
     font-size: 2.5rem;
 }
 
+@media screen and (max-width: 768px) {
+    .title-sec{
+        width: 80%;
+        text-align: center;
+    }
+}
 
+@media screen and (max-width: 600px) {
+    .title-sec{
+        width: 100%;
+        text-align: center;
+    }
+}
 
 
 
@@ -199,7 +212,6 @@ main{
 .about-us{
     position: relative;
     width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -248,7 +260,6 @@ main{
 .services{
     position: relative;
     width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -257,6 +268,7 @@ main{
     padding: 60px 40px;
     row-gap: 20px;
     column-gap: 40px; 
+    background-color: var(--white);
 }
 
 .services .service-box{
@@ -272,6 +284,43 @@ main{
 .services .service-box .service-item{
     text-align: center;
     flex: 1 1 300px;
+}
+
+.portfolio{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 40px;
+    row-gap: 20px;
+    column-gap: 40px; 
+    background-color: var(--white);
+}
+
+.portfolio .portfolio-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 50px;
+}
+
+.portfolio-box .portfolio-item{
+    position: relative;
+    padding: 20px;
+    text-align: left;
+    line-height: 2;
+}
+
+.portfolio-item .arrow{
+    position: absolute;
+    bottom: 25px; right: 25px;
 }
 
 .blog{
